@@ -813,6 +813,22 @@
     lodash.isequal "^4.5.0"
     react-native-redash "^13.6.0"
 
+"@gorhom/paper-onboarding@^1.0.0":
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/@gorhom/paper-onboarding/-/paper-onboarding-1.0.0.tgz#343e6d554740e09246da93b89fb166c7e487a485"
+  integrity sha512-VCiHUcnC6vSehnLm+23mvLU3AmarHFMPfQlumNUvWFAylT8X9O689B1VQsPl4GKF0PJjZL4VRHZoZJ1LgkdVAw==
+  dependencies:
+    lodash.isequal "^4.5.0"
+    react-native-redash "^14.0.4"
+    react-native-svg "^12.1.0"
+
+"@gorhom/sticky-item@^2.0.0":
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/@gorhom/sticky-item/-/sticky-item-2.0.0.tgz#1f76dddb988a7c45f3f4a54be2beec96d39fcb5b"
+  integrity sha512-7QQOyUk8QnRhfRv0jtGRUbd9gWPm3zwdxgRUPSIoa74mZt2Sqibpv8bFSoWhkzJpLtuNfJsWtx9PZoeF+JsksA==
+  dependencies:
+    react-native-redash "^13.3.0"
+
 "@hapi/address@2.x.x":
   version "2.1.4"
   resolved "https://registry.yarnpkg.com/@hapi/address/-/address-2.1.4.tgz#5d67ed43f3fd41a69d4b9ff7b56e7c0d1d0a81e5"
@@ -6035,10 +6051,19 @@ react-native-reanimated@^1.8.0:
   dependencies:
     fbjs "^1.0.0"
 
-react-native-redash@^13.6.0:
+react-native-redash@^13.3.0, react-native-redash@^13.6.0:
   version "13.6.0"
   resolved "https://registry.yarnpkg.com/react-native-redash/-/react-native-redash-13.6.0.tgz#6f6c8d64f9fd6dc8a39a2d4320cba688c66a6958"
   integrity sha512-E1IqTnPF64lXwlChBxr39BJcpHp1wn4f+4THK1bQ6NBJ6eNnYxTJfJJ8bdabS+4M47A8grzawhiBHWPzl5zDQw==
+  dependencies:
+    abs-svg-path "^0.1.1"
+    normalize-svg-path "^1.0.1"
+    parse-svg-path "^0.1.2"
+
+react-native-redash@^14.0.4:
+  version "14.2.1"
+  resolved "https://registry.yarnpkg.com/react-native-redash/-/react-native-redash-14.2.1.tgz#1a1690c65fe438a67ad24d0e80c3d5f38cea111a"
+  integrity sha512-7xeh7LCx9iKXLnRTzEK5bjvthcb/G2c/ktdRv2FoVVqMlzYeApdxeSM+QKsXaJ8ka/hZEABHqO576s2fNnVXrA==
   dependencies:
     abs-svg-path "^0.1.1"
     normalize-svg-path "^1.0.1"

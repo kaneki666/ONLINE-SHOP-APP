@@ -13,6 +13,8 @@ import Cart from '../components/Cart';
 import Checkout from '../components/ModalScreen';
 import Details from '../components/Details';
 import TabNavigator from './Menu';
+import Story from '../components/Story';
+import Stories from '../components/Stories';
 
 const Tab = createBottomTabNavigator();
 
@@ -96,6 +98,8 @@ function Screens() {
         <RootStack.Screen name="Checkout" component={Checkout} />
         <RootStack.Screen name="Details" component={Details} />
         <RootStack.Screen name="Cart" component={Cart} />
+        <RootStack.Screen name="Story" component={Story} />
+        <RootStack.Screen name="Stories" component={Stories} />
       </RootStack.Navigator>
     </NavigationContainer>
   );

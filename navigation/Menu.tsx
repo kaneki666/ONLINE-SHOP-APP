@@ -73,14 +73,14 @@ const ProfileSVG = ({color, size}: SVGProps) => {
             position: 'absolute',
             right: -6,
             top: -3,
-            backgroundColor: 'white',
+
             borderRadius: 6,
             width: 12,
             height: 12,
             justifyContent: 'center',
             alignItems: 'center',
           }}>
-          <Text style={{color: 'black', fontSize: 10, fontWeight: 'bold'}}>
+          <Text style={{color: 'black', fontSize: 12, fontWeight: 'bold'}}>
             {amount}
           </Text>
         </View>
@@ -94,30 +94,30 @@ const Tab = createBottomTabNavigator<MainTabsParams>();
 const tabs: TabsConfig<BubbleTabConfig, MainTabsParams> = {
   Products: {
     labelStyle: {
-      color: '#FBAD26',
+      color: '#5B37B7',
     },
     icon: {
       component: HomeSVG,
-      activeColor: '#FBAD26',
+      activeColor: 'rgba(91,55,183,1)',
       inactiveColor: 'rgba(0,0,0,1)',
     },
     background: {
-      activeColor: '#691EFF',
-      inactiveColor: '#996fed',
+      activeColor: 'rgba(223,215,243,1)',
+      inactiveColor: 'rgba(223,215,243,0)',
     },
   },
   Cart: {
     labelStyle: {
-      color: '#0c9c11',
+      color: '#E6A919',
     },
     icon: {
       component: ProfileSVG,
-      activeColor: '#0c9c11',
+      activeColor: 'rgba(230,169,25,1)',
       inactiveColor: 'rgba(0,0,0,1)',
     },
     background: {
-      activeColor: '#ff0000',
-      inactiveColor: '#ed8166',
+      activeColor: 'rgba(251,239,211,1)',
+      inactiveColor: 'rgba(251,239,211,0)',
     },
   },
 };
@@ -126,12 +126,7 @@ const Menu = () => {
   return (
     <Tab.Navigator
       tabBar={(props) => (
-        <AnimatedTabBar
-          style={{backgroundColor: '#0f121b'}}
-          iconSize={20}
-          tabs={tabs}
-          {...props}
-        />
+        <AnimatedTabBar iconSize={20} tabs={tabs} {...props} />
       )}>
       <Tab.Screen
         name="Products"
